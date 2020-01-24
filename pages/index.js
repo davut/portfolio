@@ -1,88 +1,212 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+import Head from "next/head";
+import Nav from "../components/nav";
+import Card from "../components/card";
+import Typewriter from "typewriter-effect";
+import projects from "../public/projects";
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <div className="container">
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <Nav />
+      <Head>
+        <title>Davut's Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
-
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
+      {/* <Nav /> */}
+      {/* <div className="view"></div> */}
+      <div className="hero">
+        <h1 className="title">Davut Dev</h1>
+        <div className="subtitle">
+          <Typewriter
+            style={pStyle}
+            options={{
+              strings: [
+                "Software <strong>Developer<strong>",
+                "Music <strong>Producer<strong>"
+              ],
+              autoStart: true,
+              loop: true
+            }}
+          />
+        </div>
+        <div className="social-media">
+          <a href="https://www.twitter.com/lovelyDeveloper">
+            <ion-icon size="large" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.github.com/davutj">
+            <ion-icon size="large" name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <h2>Side Projects</h2>
+        <div className="cards">
+          {projects.sideProjects.map(
+            ({ id, title, image, platformImg, desc, devices }) => (
+              <Card
+                key={id}
+                img={image}
+                title={title}
+                platformImg={platformImg}
+                desc={desc}
+                devices={devices}
+              ></Card>
+            )
+          )}
+        </div>
+        <h2>Work Projects</h2>
+        <div className="cards">
+          {projects.workProjects.map(
+            ({ id, title, image, platformImg, desc, devices }) => (
+              <Card
+                key={id}
+                img={image}
+                title={title}
+                platformImg={platformImg}
+                desc={desc}
+                devices={devices}
+              ></Card>
+            )
+          )}
+        </div>
+        <h2>Contributions</h2>
+        <div className="cards">
+          {projects.contributions.map(
+            ({ id, title, image, platformImg, desc, devices }) => (
+              <Card
+                key={id}
+                img={image}
+                title={title}
+                platformImg={platformImg}
+                desc={desc}
+                devices={devices}
+              ></Card>
+            )
+          )}
+        </div>
       </div>
     </div>
 
+    {/* <footer>Footer</footer> */}
+
     <style jsx>{`
+      body {
+        margin: 0px 50px 0px 50px;
+      }
+      .container {
+        // width: 90%;
+        min-height: 100vh;
+        max-width: 1600px;
+        padding-left: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        overflow: scroll;
+      }
+
       .hero {
+        position: regular;
+        margin-top: 20px;
+        // margin-left: -80px;
         width: 100%;
         color: #333;
       }
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 10px;
         line-height: 1.15;
         font-size: 48px;
       }
-      .title,
+      .subtitle {
+        font-size: 24px;
+        height: 40px;
+        margin-bottom: 50px;
+      }
+
       .description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.7em;
+        // margin-top: 100px;
+        // padding: 20px;
+      }
+
+      .cards {
+        display: flex;
+        margin-left: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 150px;
+      }
+
+      .view {
+        position: absolute;
+        float: left;
+        width: 70%;
+        min-height: 200px;
+        margin: 0px -50px 0px 50px;
+        background-color: #dddddd;
+        border-radius: 4px;
+        z-index: -5;
+        box-shadow: 0 6.5px 30px rgba(0, 0, 0, 0.045),
+          0 52px 80px rgba(0, 0, 0, 0.09);
+      }
+
+      .cards {
+      }
+
+      .social-media {
+        // position: absolute;
+        // width: 90%
+        margin-bottom: 75px;
         text-align: center;
       }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+      .social-media a {
+        margin-right: 20px;
       }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
+
+      a {
         text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
+        color: black;
       }
-      .card:hover {
-        border-color: #067df7;
+
+      a :hover {
+        color: gray;
       }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
+
+      footer {
+        height: 50px;
       }
     `}</style>
   </div>
-)
+);
+const pStyle = {
+  fontSize: "15px",
+  textAlign: "center"
+};
 
-export default Home
+export default Home;
+{
+  /* <p className="description">
+            <strong>Hello!</strong> <br /><br />
+
+            I’m a software developer with an understanding of design. For the last 8.5 years, I’m focused on making great products for Apple devices. <br /><br />
+
+            Offscreen, I'm an avid for good tea, coffee and fantasy fiction books. I mostly listen to 70s Prog Rock and play drums. <br /><br />
+
+            Throughout my career, I've released 10+ native iOS apps, many more web apps, founded NSIstanbul, and gave talks at meetups. <br /><br />
+
+            I aim to work on projects that are useful, ethically responsible and well-crafted.<br /><br />
+
+            This is my space where I publish articles, suggest books (soon) and display my work (also very soon).<br /><br />
+
+            If you are related to anything mentioned above, feel free to subscribe to this blog and or follow me on twitter.<br /><br />
+
+            For inquiries, seyfeddin[at]wearethread.co<br /><br />
+          </p> */
+}
