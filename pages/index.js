@@ -12,13 +12,13 @@ const Home = () => (
 
       <Head>
         <title>Davut's Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       {/* <Nav /> */}
       {/* <div className="view"></div> */}
       <div className="hero">
-        <h1 className="title">Davut Dev</h1>
+        <h1 className="title">Davut Jepbarov</h1>
         <div className="subtitle">
           <Typewriter
             style={pStyle}
@@ -43,7 +43,7 @@ const Home = () => (
         <h2>Side Projects</h2>
         <div className="cards">
           {projects.sideProjects.map(
-            ({ id, title, image, platformImg, desc, devices }) => (
+            ({ id, title, image, platformImg, desc, devices, url }) => (
               <Card
                 key={id}
                 img={image}
@@ -51,6 +51,7 @@ const Home = () => (
                 platformImg={platformImg}
                 desc={desc}
                 devices={devices}
+                url={url}
               ></Card>
             )
           )}
@@ -58,7 +59,7 @@ const Home = () => (
         <h2>Work Projects</h2>
         <div className="cards">
           {projects.workProjects.map(
-            ({ id, title, image, platformImg, desc, devices }) => (
+            ({ id, title, image, platformImg, desc, devices, url }) => (
               <Card
                 key={id}
                 img={image}
@@ -66,6 +67,7 @@ const Home = () => (
                 platformImg={platformImg}
                 desc={desc}
                 devices={devices}
+                url={url}
               ></Card>
             )
           )}
@@ -73,7 +75,7 @@ const Home = () => (
         <h2>Contributions</h2>
         <div className="cards">
           {projects.contributions.map(
-            ({ id, title, image, platformImg, desc, devices }) => (
+            ({ id, title, image, platformImg, desc, devices, url }) => (
               <Card
                 key={id}
                 img={image}
@@ -81,6 +83,7 @@ const Home = () => (
                 platformImg={platformImg}
                 desc={desc}
                 devices={devices}
+                url={url}
               ></Card>
             )
           )}

@@ -1,36 +1,40 @@
 import React from "react";
-// import Link from "next/link";
+import Link from "next/link";
 
 // const links = [
-//   { href: 'https://github.com/davutj', label: 'GitHub' },
+//   { href: '', label: 'GitHub' },
 // ].map(link => {
 //   link.key = `nav-link-${link.href}-${link.label}`
 //   return link
 // })
 
-const Card = ({ title, img, platformImg, desc, devices = [] }) => (
+const page = "";
+
+const Card = ({ url, title, img, platformImg, desc, devices = [] }) => (
   <div className="container">
-    <div className="card">
-      <div className="wrapper">
-        <img className="app-logo" src={img}></img>
-        <div className="titleWrapper">
-          <h3>{title}</h3>
-          <img className="platform" src={platformImg}></img>
+    <a href={url}>
+      <div className="card">
+        <div className="wrapper">
+          <img className="app-logo" src={img}></img>
+          <div className="titleWrapper">
+            <h3>{title}</h3>
+            <img className="platform" src={platformImg}></img>
+          </div>
+        </div>
+        <p>{desc}</p>
+        <div className="devices">
+          {devices.map(device => {
+            return (
+              <img
+                key={device.id}
+                className="platform"
+                src={device.imgName}
+              ></img>
+            );
+          })}
         </div>
       </div>
-      <p>{desc}</p>
-      <div className="devices">
-        {devices.map(device => {
-          return (
-            <img
-              key={device.id}
-              className="platform"
-              src={device.imgName}
-            ></img>
-          );
-        })}
-      </div>
-    </div>
+    </a>
     <style jsx>{`
       .container {
         margin: 50px 20px 0px 0px;
@@ -40,6 +44,11 @@ const Card = ({ title, img, platformImg, desc, devices = [] }) => (
         height: 30px;
         width: 30px;
         border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
       }
 
       .titleWrapper {
