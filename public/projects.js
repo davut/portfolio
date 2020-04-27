@@ -24,7 +24,7 @@ const projects = {
       image: "collectoji.png",
       title: "Collectoji",
       platformImg: "swift.svg",
-      desc: "Game - Available in AppStore",
+      desc: "iOS Game - Available in AppStore",
       url: "https://apps.apple.com/us/app/collectoji/id1395829806",
       devices: [
         {
@@ -38,7 +38,7 @@ const projects = {
       image: "setirler.png",
       title: "setirler",
       platformImg: "vue.svg",
-      desc: "Lyrics web site for Turkmen songs",
+      desc: "Lyrics & karaoke for turkmen songs",
       url: "https://setirler.com",
       devices: [
         {
@@ -52,7 +52,7 @@ const projects = {
       image: "",
       title: "Davut's Portfolio",
       platformImg: "react-native.svg",
-      desc: "Portfolio made using Next.js",
+      desc: "The website you are currently visiting",
       url: "https://github.com/davutj/portfolio",
       devices: [
         {
@@ -66,7 +66,7 @@ const projects = {
       image: "appstore.svg",
       title: "App Store Clone",
       platformImg: "swift.svg",
-      desc: "App Store Clone",
+      desc: "Clone of the App Store",
       url: "https://github.com/davutj/AppStoreClone",
       devices: [
         {
@@ -80,7 +80,7 @@ const projects = {
       image: "spotify.png",
       title: "Spotify Clone",
       platformImg: "swift.svg",
-      desc: "Spotify Clone",
+      desc: "Clone of the Spotify",
       url: "https://github.com/davutj/SpotifyClone",
       devices: [
         {
@@ -94,7 +94,7 @@ const projects = {
       image: "tinder.png",
       title: "Tinder Clone",
       platformImg: "swift.svg",
-      desc: "Tinder Clone",
+      desc: "Clone of the Tinder",
       url: "https://github.com/davutj/TinderClone",
       devices: [
         {
@@ -110,7 +110,7 @@ const projects = {
       image: "jebwa.png",
       title: "Jebwa",
       platformImg: "react-native.svg",
-      desc: "E-commerce - Luxury second hand bags",
+      desc: "App - Buy Luxury second hand bags",
       url: "https://github.com/davutj",
       devices: [
         {
@@ -128,7 +128,7 @@ const projects = {
       image: "redrow.png",
       title: "Redrow",
       platformImg: "swift.svg",
-      desc: "App to find a place to live in London",
+      desc: "iOS App - Find a house in London",
       url: "https://github.com/davutj",
       devices: [
         {
@@ -142,7 +142,7 @@ const projects = {
       image: "loodos.png",
       title: "We Toilet",
       platformImg: "swift.svg",
-      desc: "Desktop status bar app, shows toilet status",
+      desc: "Mac status bar App - Someone in toilet?",
       url: "https://github.com/davutj",
       devices: [
         {
@@ -156,7 +156,7 @@ const projects = {
       image: "loodos.png",
       title: "Loodos",
       platformImg: "swift.svg",
-      desc: "App for company use",
+      desc: "iOS App - Engage with your colleagues",
       url: "https://github.com/davutj",
       devices: [
         {
@@ -172,7 +172,7 @@ const projects = {
       image: "vodafone-park.png",
       title: "Vodafone Arena",
       platformImg: "objective-c.svg",
-      desc: "Besiktas Football Team Stadium app",
+      desc: "iOS App - Besiktas Football Team Stadium",
       url: "https://github.com/davutj",
       devices: [
         {
