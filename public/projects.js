@@ -1,24 +1,24 @@
 const projects = {
   sideProjects: [
-    {
-      id: 1,
-      image: "ad.png",
-      title: "A&D Magazin (Soon)",
-      platformImg: "react-native.svg",
-      // <a target="_blank" href="https://icons8.com/icons/set/react-native">React Native icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      desc: "E-commerce clothing",
-      url: "https://github.com/davutj",
-      devices: [
-        {
-          id: 1,
-          imgName: "android.svg"
-        },
-        {
-          id: 2,
-          imgName: "apple.svg"
-        }
-      ]
-    },
+    // {
+    //   id: 1,
+    //   image: "ad.png",
+    //   title: "A&D Magazin (Soon)",
+    //   platformImg: "react-native.svg",
+    //   // <a target="_blank" href="https://icons8.com/icons/set/react-native">React Native icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    //   desc: "E-commerce clothing",
+    //   url: "https://github.com/davutj",
+    //   devices: [
+    //     {
+    //       id: 1,
+    //       imgName: "android.svg",
+    //     },
+    //     {
+    //       id: 2,
+    //       imgName: "apple.svg",
+    //     },
+    //   ],
+    // },
     {
       id: 2,
       image: "collectoji.png",
@@ -29,23 +29,23 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
+          imgName: "apple.svg",
+        },
+      ],
     },
     {
       id: 3,
-      image: "",
-      title: "Lirika (Soon)",
+      image: "setirler.png",
+      title: "setirler",
       platformImg: "vue.svg",
       desc: "Lyrics web site for Turkmen songs",
-      url: "https://github.com/davutj",
+      url: "https://setirler.com",
       devices: [
         {
           id: 1,
-          imgName: "web.png"
-        }
-      ]
+          imgName: "web.png",
+        },
+      ],
     },
     {
       id: 4,
@@ -57,9 +57,9 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "web.png"
-        }
-      ]
+          imgName: "web.png",
+        },
+      ],
     },
     {
       id: 5,
@@ -71,9 +71,9 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
+          imgName: "apple.svg",
+        },
+      ],
     },
     {
       id: 6,
@@ -85,9 +85,9 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
+          imgName: "apple.svg",
+        },
+      ],
     },
     {
       id: 7,
@@ -99,10 +99,10 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
-    }
+          imgName: "apple.svg",
+        },
+      ],
+    },
   ],
   workProjects: [
     {
@@ -115,13 +115,13 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "android.svg"
+          imgName: "android.svg",
         },
         {
           id: 2,
-          imgName: "apple.svg"
-        }
-      ]
+          imgName: "apple.svg",
+        },
+      ],
     },
     {
       id: 2,
@@ -133,9 +133,9 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
+          imgName: "apple.svg",
+        },
+      ],
     },
     {
       id: 3,
@@ -147,9 +147,9 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "desktop.svg"
-        }
-      ]
+          imgName: "desktop.svg",
+        },
+      ],
     },
     {
       id: 4,
@@ -161,10 +161,10 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
-    }
+          imgName: "apple.svg",
+        },
+      ],
+    },
   ],
   contributions: [
     {
@@ -177,11 +177,11 @@ const projects = {
       devices: [
         {
           id: 1,
-          imgName: "apple.svg"
-        }
-      ]
-    }
-  ]
+          imgName: "apple.svg",
+        },
+      ],
+    },
+  ],
 };
 
 export default projects;
